@@ -1,0 +1,232 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.HederStyle {
+}
+
+.auction_forms {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  align-items: center;
+  min-width: 200px;
+}
+
+.auction_forms > .form_content {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  min-width: 200px;
+}
+
+.form_content > .heading {
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+}
+
+.form_content > .disclaimer {
+  width: 100%;
+  font-size: small;
+  font-weight: lighter;
+  padding: 10px;
+}
+.form_content > .fields {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup { 
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fields > label {
+  margin: 2px;
+}
+
+.fields > input {
+  padding: 10px;
+  border-radius: 4px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.form_content > button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #235cdc,
+    #51c1f8
+  ); /* Shades of blue */
+  transition: background 0.3s ease;
+  border-style: none;
+}
+
+.form_content > button:hover {
+  background-image: linear-gradient(
+    to right,
+    #2a5298,
+    #1e3c72
+  ); /* Reverse gradient on hover */
+}
+
+.header-home {
+  background-color: #ffe5f2;
+  padding: 10px 0;
+}
+
+.header-others {
+  background-color: white;
+  padding: 10px 0;
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .others {
+  background-color: white;
+}
+
+.navbar .logo {
+  display: flex;
+
+}
+
+.navbar .logosvg{
+  width: 40px;
+  height: 40px;
+}
+
+.companyLogo{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+
+.navbar .menuitems {
+  display: flex;
+  justify-content: end;
+}
+
+/* Menu Styling */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li {
+  position: relative; /* Required for dropdown positioning */
+}
+
+.menu a {
+  color: #554c50;
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+.menu a:hover {
+  background-color: #fbc2de;
+}
+
+/* Dropdown Styling */
+.dropdown .dropdown-content {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%; /* Aligns dropdown under the parent */
+  left: 0;
+  /*background-color: #333;*/
+  background-color: #fbc2de;
+  min-width: 150px;
+  z-index: 1;
+  color: white;
+}
+
+.dropdown .dropdown-content a {
+  padding: 10px 20px;
+}
+
+.dropdown .dropdown-content a:hover {
+  border: 1px solid #ffe5f2;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: white;
+}
+
+.select-dropdown {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.select-dropdown select {
+  padding: 10px;
+  font-size: 16px;
+  background: none;
+  color: #554c50;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.form-container {
+  display: flex;
+  width: 100%;
+}
+
+.form-container-left {
+  width: 42%;
+}
+.form-container-right {
+  width: 58%;
+}
+.form-container-right > img {
+  width: 100%;
+  height: 100%;
+}
