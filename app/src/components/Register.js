@@ -3,6 +3,7 @@ import { register } from "../services/authService";
 import Header from "./Header";
 import Fields from "./Fields";
 import registerImage from "../assets/register.png";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -10,6 +11,7 @@ function Register() {
     email: "",
     password: "",
   });
+  const navigate = useNavigate();
   const handleChange = (e) =>
     setFormData({ ...formData, [e.target.name]: e.target.value });
   const registeredFields = [
@@ -35,6 +37,7 @@ function Register() {
     e.preventDefault();
     try {
       await register(formData);
+      navigate("/login");
     } catch (error) {
       console.error(error);
     }
